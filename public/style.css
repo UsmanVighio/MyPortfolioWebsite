@@ -1,0 +1,493 @@
+@font-face {
+    font-family: PoppinReg;
+    src: url(fonts/Poppins-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: PoppinMed;
+    src: url(fonts/Poppins-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: PoppinSemiBold;
+    src: url(fonts/Poppins-SemiBold.ttf);
+
+}
+
+body {
+    margin: 0px;
+    /* background-color: rgba(170, 170, 170, 0.801); */
+    background-color: #58E6CA;
+    font-family: PoppinReg;
+}
+
+.navbar {
+
+    min-height: 100px;
+
+}
+
+.navalign {
+
+    height: 40px;
+    margin: 0 0 0 50%;
+
+}
+
+
+.imgbox {
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px 0px 10px;
+
+}
+
+img {
+    width: 100%;
+
+}
+
+.navbtn,
+.navbtnNAME {
+    color: #58E6CA !important;
+    font-family: PoppinMed;
+    transition: .1s;
+    width: 100
+}
+
+.navbtnNAME:hover {
+    color: #F7DC6F !important;
+    transition: .7s;
+}
+
+.navbtn:hover {
+    border-bottom: 3px solid #58E6CA;
+    transform: scale(1.1);
+    color: #F7DC6F !important;
+}
+
+.container-background {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background-color: #293A4B;
+}
+
+.container-info {
+    width: 600px;
+    min-height: 200px;
+    padding: 0px 5px 0px 5px;
+    color: white
+}
+
+.container-info>h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.container-info>h4>span {
+    color: #58E6CA
+}
+
+.myimage {
+    width: 400px;
+    max-height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -3px -2px 10px #25C8A9;
+    margin: 30px 15px 30px 15px;
+}
+
+@media only screen and (max-width:600px) {
+    .myimage {
+        width: 300px !important;
+        height: 300px
+    }
+
+    .container-info {
+        padding: 50px;
+    }
+
+    .container-info>h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .container-info>h4{
+        
+        font-size:20px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .myimage {
+        width: 250px !important;
+        height: 250px
+    }
+
+    .container-info {
+        padding: 30px;
+    }
+    .container-info>h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .container-info>h4 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+.container-about {
+    width: 100%;
+    min-height: 300px;
+    background-color: #1B2631;
+    text-align: center;
+
+    padding: 60px 10px 10px 10px;
+}
+
+.container-about>h1 {
+    color: #58E6CA;
+}
+
+.container-about>.underline {
+    height: 7px;
+    max-width: 300px;
+    background-color: #F7DC6F;
+    /* background-color: #85929E ; */
+    border-radius: 20px;
+}
+
+.container-about>p {
+    width: 53%;
+    margin: 30px auto 0px auto;
+    color: #58E6CA;
+    font-family: PoppinReg;
+    font-size: 15px;
+}
+
+.container-myintro {
+    width: 100%;
+    min-height: 600px;
+    margin: 2px 0;
+    
+    background-color: #1B2631;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: PoppinReg;
+}
+
+.container-myintro>.boxes {
+    width: 650px;
+    min-height: 500px;
+    margin: 0 10px;
+    padding: 50px 30px 50px 50px;
+
+
+}
+
+@media only screen and (max-width:600px) {
+    .container-myintro>.boxes {
+        padding: 10px;
+
+    }
+
+    .container-about>h1 {
+        font-size: 35px;
+    }
+
+    .container-about>p {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .container-skills {
+        padding-top: 50px;
+    }
+
+    .container-skills>.skillsbox {
+
+        margin-top: -30px;
+    }
+
+}
+
+.container-aboutme {
+
+    color: #58E6CA;
+}
+
+.container-aboutme>h4,
+.container-skills>h4 {
+    font-size: 30px;
+    /* color: #58E6CA; */
+    font-family: PoppinMed;
+    margin-bottom: 50px;
+    color: #58E6CA;
+}
+
+.container-aboutme>p {
+    line-height: 1.6em;
+}
+.container-aboutme>p>strong{
+    color:#F7DC6F;
+}
+
+.container-aboutme>a>button {
+    width: 150px;
+    height: 50px;
+    background-color: #F7DC6F;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    border-style: none;
+    transition: .2s;
+}
+
+.container-aboutme>a>button:hover {
+    transform: scale(1.1);
+    margin-left: 5px;
+}
+
+.container-skills {
+    position: relative;
+
+
+}
+
+.skillsbox {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.container-skills>.skillsbox>p {
+
+    width: auto;
+    height: 40px;
+    /* padding:12px 20PX 10PX 20PX; */
+    padding: 10px 20px 10px 20px;
+    MARGIN: 10px;
+    border-radius: 10px;
+    font-family: PoppinMed;
+    background-color: #F7DC6F;
+    transition: .2s;
+}
+
+.container-skills>.skillsbox>p:hover {
+    transform: scale(1.1);
+}
+
+
+
+.container-aboutprojects>.underline {
+    height: 7px;
+    max-width: 250px;
+    background-color: #F7DC6F;
+    /* background-color: #85929E ; */
+    border-radius: 20px;
+
+}
+
+.container-projects {
+    width: 100%;
+    height: auto;
+    background-color: #1B2631;
+}
+
+.container-decription {
+    width: 100%;
+    min-height: 600px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.container-decription>.boxes {
+    width: 650px;
+    max-height: 600PX;
+    background-color: #F7DC6F;
+    margin: 5PX;
+}
+
+.container-contactme {
+    width: 100%;
+    min-height: 500px;
+    background-color: #1B2631;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.container-contactme>.container-boxes {
+    position: relative;
+    width: 600px;
+    min-height: 550px;
+    background-color: #263747;
+    margin: 10px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+    border: 1px solid #58E6CA;
+    box-shadow: -1px -1px 10px #58E6CA;
+    font-family: PoppinReg;
+
+}
+
+.container-contactme>.container-boxes>label {
+    font-family: PoppinMed;
+    margin-top: 20px;
+    color: #58E6CA;
+}
+
+.container-contactme>.container-boxes>.textbox {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #EAEDED;
+    border-style: none;
+}
+
+.container-contactme>.container-boxes>.textbox:hover {
+    border: 2px solid #58E6CA;
+}
+
+.messagebox {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #EAEDED;
+}
+
+.container-contactme>.container-boxes>button {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    width: 30%;
+    min-height: 40px;
+    border-radius: 5px;
+    font-family: PoppinMed;
+    background-color: #F7DC6F;
+    transition: .3s;
+
+}
+
+.container-contactme>.container-boxes>button:hover {
+    transform: scale(1.1);
+}
+
+.container-footer {
+    /* width:100%;
+    min-height:350px;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+     */
+    width: 100%;
+    height: auto;
+    margin-top: 4px;
+    margin-bottom: -10px;
+    background-color: #1B2631;
+
+}
+
+.container-footer>.container-socialsites {
+    width: 90%;
+    min-height: 200px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-socialsites>.boxes {
+    width: 590px;
+    min-height: auto;
+    margin: 5px;
+    color: #58E6CA;
+    padding: 40px 20px 0px 0px;
+}
+
+.container-socialsites>.myintro>h4,
+.container-socialsites>.mysiteslink>h4 {
+    font-family: PoppinMed;
+
+
+}
+
+.container-socialsites>.mysiteslink {
+    padding-left: 200px;
+}
+
+.container-socialsites>.mysiteslink>p>img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 5px;
+}
+
+.container-socialsites>.mysiteslink>p>.imgsize {
+    width: 25px;
+    height: 25px;
+}
+
+.container-footer>.container-copyright {
+    position: relative;
+    width: 90%;
+    height: 100px;
+
+    border-top: 2px solid #58E6CA;
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+.container-copyright>p {
+    color: #58E6CA;
+    margin-top: 50px;
+    font-size: 12px;
+
+}
+
+@media only screen and (max-width:900px) {
+
+    .container-socialsites>.mysiteslink {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    p {
+        font-size: 12px;
+
+    }
+
+    .container-copyright>p {
+        font-size: 10px;
+    }
+
+}
